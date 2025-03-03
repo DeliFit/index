@@ -3,143 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DeliFit - Comida saludable, panquecas de proteína, postres sin azúcar y snacks integrales en Villavicencio y municipios cercanos del Meta.">
-    <meta name="keywords" content="comida saludable, postres sin azúcar, panquecas de proteína, snacks integrales, DeliFit, Villavicencio, alimentación fit">
-    <meta name="author" content="DeliFit">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="DeliFit - Comida Saludable">
-    <meta property="og:description" content="Descubre la mejor comida saludable en Villavicencio. Panquecas de proteína, postres sin azúcar y snacks integrales para un estilo de vida fit.">
-    <meta property="og:image" content="https://www.tusitioweb.com/imagen-delifit.jpg">
-    <meta property="og:url" content="https://tuusuario.github.io/DeliFit/">
-    <title>DeliFit - Comida Saludable</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <title>DeliFit - Tu Tienda de Comida Saludable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fce4ec;
             color: #333;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+            text-align: center;
         }
         header {
-            background: linear-gradient(135deg, #FFB6C1, #FFA07A);
-            color: #fff;
-            text-align: center;
+            background-color: #ff80ab;
             padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            animation: fadeInDown 1s;
-        }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #FFA07A;
-            padding: 15px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: #FFD700;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
         }
         .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 20px;
-            text-align: center;
-            animation: fadeInUp 1s;
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .product {
-            display: inline-block;
-            width: 30%;
-            margin: 15px;
             padding: 20px;
-            background: #F8F8F8;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
         }
-        .product:hover {
+        .section {
+            margin: 40px 0;
+        }
+        .catalogo, .plan {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 250px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .catalogo:hover, .plan:hover {
             transform: scale(1.05);
         }
-        .buy-button {
-            display: block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #FFA07A;
-            color: #fff;
-            font-size: 16px;
+        .boton-comprar {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: 0.3s;
-        }
-        .buy-button:hover {
-            background-color: #FFD700;
-        }
-        .floating-button {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            background: #FFD700;
-            color: #333;
-            padding: 15px;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: #fff;
-            padding: 15px 20px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            font-weight: 600;
             text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
         }
-        .whatsapp-button:hover {
-            background: #1EBE5D;
+        .boton-comprar:hover {
+            background-color: #e91e63;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXXXXXX-X');
-    </script>
 </head>
 <body>
-    <header>DeliFit - Comida Saludable</header>
-    <nav>
-        <a href="#panquecas">Panquecas</a>
-        <a href="#postres">Postres</a>
-        <a href="#snacks">Snacks</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="container">
-        <h1>Bienvenidos a DeliFit</h1>
-        <p>Descubre la mejor comida saludable en Villavicencio. Panquecas de proteína, postres sin azúcar y snacks integrales para un estilo de vida fit.</p>
-    </div>
-    <a href="https://wa.me/573112167259" target="_blank" class="whatsapp-button">💬 WhatsApp</a>
+    <header>
+        DeliFit - Comida Saludable
+    </header>
+    <main class="container">
+        <section class="section" id="catalogo">
+            <h2>Catálogo de Comidas Fit</h2>
+            <div class="catalogo">
+                <h3>Tortas Fit</h3>
+                <img src="/mnt/data/A_beautifully_decorated_fit_cake_with_fresh_fruits.png" alt="Torta Fit">
+                <p>Deliciosas tortas bajas en calorías, ideales para darte un gusto sin culpa.</p>
+                <p><strong>Precio:</strong> Desde $15,000 COP</p>
+                <a class="boton-comprar" href="https://wa.me/3112167258">Comprar</a>
+            </div>
+            <div class="catalogo">
+                <h3>Galletas Fit</h3>
+                <img src="/mnt/data/A_plate_of_golden-brown_fit_cookies_made_with_oats.png" alt="Galletas Fit">
+                <p>Galletas integrales ricas en fibra y sin azúcar añadido.</p>
+                <p><strong>Precio:</strong> Paquete x6 unidades: $10,000 COP</p>
+                <a class="boton-comprar" href="https://wa.me/3112167258">Comprar</a>
+            </div>
+            <div class="catalogo">
+                <h3>Snacks Fit</h3>
+                <img src="/mnt/data/A_vibrant_fit_snack_box_filled_with_a_mix_of_healt.png" alt="Snacks Fit">
+                <p>Snacks saludables perfectos para mantenerte enérgico durante el día.</p>
+                <p><strong>Precio:</strong> Desde $5,000 COP</p>
+                <a class="boton-comprar" href="https://wa.me/3112167258">Comprar</a>
+            </div>
+        </section>
+        <section class="section" id="planes-nutricionales">
+            <h2>Planes Nutricionales</h2>
+            <p>Elige el plan ideal para ti según tu objetivo.</p>
+            <div class="plan">
+                <h3>Plan Alta Proteína</h3>
+                <img src="/mnt/data/A_visually_appealing_meal_plan_display_featuring_t.png" alt="Plan Alta Proteína">
+                <p>Ideal para ganar masa muscular con comidas balanceadas en proteínas y carbohidratos.</p>
+                <p><strong>Precio:</strong> Desde $120,000 COP/semana</p>
+                <a class="boton-comprar" href="https://wa.me/3112167258">Consultar</a>
+            </div>
+            <div class="plan">
+                <h3>Plan Pérdida de Peso</h3>
+                <img src="/mnt/data/A_visually_appealing_meal_plan_display_featuring_t.png" alt="Plan Pérdida de Peso">
+                <p>Menús hipocalóricos diseñados para ayudarte a bajar de peso sin pasar hambre.</p>
+                <p><strong>Precio:</strong> Desde $110,000 COP/semana</p>
+                <a class="boton-comprar" href="https://wa.me/3112167258">Consultar</a>
+            </div>
+            <div class="plan">
+                <h3>Plan Energía y Bienestar</h3>
+                <img src="/mnt/data/A_visually_appealing_meal_plan_display_featuring_t.png" alt="Plan Energía y Bienestar">
+                <p>Comidas nutritivas para mantenerte activo y lleno de energía durante el día.</p>
+                <p><strong>Precio:</strong> Desde $115,000 COP/semana</p>
+                <a class="boton-comprar" href="https://wa.me/3112167258">Consultar</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
